@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkFilled(obj) { // 교재 내용보다 훨씬 복잡해 졌지만 크롬의 무한 경고창 오류 때문에 어절수 없음
+            if (obj.value=="" && obj.placeholder=="") {
+                alert("enter name");
+                obj.focus();
+                obj.placeholder = " ";
+            }
+        }
+    </script>
+</head>
+<body onload="document.getElementById('name').focus()">
+    <h3>onfocus와 onblur</h3>
+    <form>
+        이름 : <input id="name" onblur="checkFilled(this)"><p>
+        학번 : <input>
+    </form>
+</body>
+</html>

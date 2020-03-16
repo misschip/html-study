@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		body {
+			background-repeat: no-repeat;
+			background-attachment: fixed; 
+			background-size: cover;
+		}
+		nav li {
+			list-style-type: none;
+			display: inline-block;
+			padding: 5px;
+		}
+		a {
+			text-decoration: none;
+			color: ghostwhite;
+		}
+
+		.formbnb {
+			/* display: none; */
+			position: fixed;
+			bottom: 5px;
+			right: 15px;
+			border: 3px solid #f1f1f1;
+			/* z-index: 9; */
+		}
+		.form-container {
+			max-width: 300px;
+			padding: 10px;
+			background-color: white;
+		}
+		.form-container input[type=text] {
+			width: 90%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			border: none;
+			background: #f1f1f1;
+		}
+		.form-container button {
+			background-color: red;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom:10px;
+			opacity: 0.8;
+		}
+
+	</style>
+</head>
+<body background="media/wallpaper.jpg">
+	<header>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">홈</a></li>
+			<li><a href="#">둘러보기</a></li>
+			<li><a href="#">도움말</a></li>
+			<li><a href="signup.html">회원가입</a></li>
+			<li><a href="login.html" target="_blank">로그인</a></li>
+		</ul>
+	</nav>
+
+	<!-- section 파트의 form에 대한 css는 아래 링크 사이트 예제 코드를 거의 가져옴
+		https://www.w3schools.com/howto/howto_js_popup_form.asp -->
+	<section>
+		<div class="formbnb">
+			<form class="form-container">
+				<!-- <fieldset> -->
+				<h2>특색있는 숙소와 즐길거리를 예약하세요.</h2>	
+				<label for="where"><b>목적지</b></label>
+				<input type="text" placeholder="모든 위치">
+				<label for="checkin"><b>체크인</b></label>
+				<input type="text" placeholder="연도-월-일">
+				<label for="checkout"><b>체크아웃</b></label>
+				<input type="text" placeholder="연도-월-일">
+				<label for="guest""><b>인원</b></label>
+				<input type="text" placeholder="인원">
+				<button type="submit">검색</button>
+				<!-- </fieldset> -->
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>

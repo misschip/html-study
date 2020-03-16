@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내 프로필</title>
+<style>
+    body {
+        background:#d5e6eb ;
+        font-size:20px;
+
+    }
+    table {
+        padding:150px;
+    }
+    table td {
+        text-align:center;
+    }
+
+    #myphoto { border-radius:300px;}
+
+    .hobby span {
+        color:ghostwhite;
+        background:rgb(50, 166, 212);
+        padding:5px;
+        margin: 10px 50px;
+        border-radius:30px;
+    }
+
+    .icon {
+        width:40px;
+        height:40px;
+    }
+    
+</style>
+</head>
+
+<body>
+<table border="1">
+
+		<tr>
+            <td rowspan="4"><img id="myphoto" src="media/myphoto.png" alt="my pic" width="300" height="300"></td>
+            <td style="font-size:40px;font-weight:bold; ">박 영 주</td>
+        </tr>
+        <tr>
+            <td><img class="icon" src="media/birth.png">생년월일 1974.10.27</td>
+        </tr>
+        <tr>
+            <td><img class="icon" src="media/location.png">대한민국 부산시 연제구 연산동 주민</td>
+        </tr>
+        <tr>
+            <td><a href="https://blog.naver.com/misschip"><img class="icon" src="media/blog.png">네이버 블로그 바로가기</a></td>
+        </tr>
+        <tr>
+            <td style="height:30px;"></td>
+        </tr>
+        <tr class="hobby">
+            <td colspan="2"><span >영화보기</span><span>프로그래밍</span><span>수영</span></td>
+        </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+fieldset {
+	width: 300px;
+	line-height: 2.0;
+}
+input, button {
+	width: 100%;
+	height: 25px;
+}
+input[type="checkbox"] {
+	width: 3%;
+	vertical-align: bottom;
+}
+fieldset p, fieldset span {
+	font-size: small;
+	vertical-align: middle;
+}
+fieldset label {
+	font-size: small;
+	font-weight: bold;
+}
+
+#facebook {
+	background-color: #4064AD;
+	color:ghostwhite;
+}
+#google {
+	background-color: ghostwhite;
+}
+input[type="submit"] {
+	background-color: #D2322B;
+	color:ghostwhite;
+	height: 28px; /* submit 버튼은 저위 25px에서 내부적으로 몇픽셀 까먹는 듯 */
+}
+.or {
+	 text-align: center;
+	 margin: 0px;
+	 padding: 0px;
+}
